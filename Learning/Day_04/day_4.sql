@@ -1,0 +1,42 @@
+select * from EMP
+/*
+day 4
+*/
+select job as JOB from emp
+select distinct job,deptno from emp
+
+select distinct empno,ename from emp
+select distinct*from emp
+
+/*
+TOP CLAUSE - TO DISPLAY TOP N ROWS 
+*/
+
+SELECT TOP 5*
+FROM EMP 
+
+SELECT TOP 5 * FROM EMP
+ORDER BY SAL DESC 
+
+SELECT * FROM EMP
+ORDER BY EMPNO ASC
+
+SELECT TOP 3 * FROM EMP
+ORDER BY HIREDATE ASC
+
+SET IMPLICIT_TRANSACTIONS ON
+UPDATE EMP
+SET COMM=500
+
+ROLLBACK
+
+SELECT*FROM EMP
+
+UPDATE EMP 
+SET COMM=800 
+WHERE EMPNO=7369
+
+UPDATE EMPS
+SET SAL=2000,COMM=500
+WHERE JOB='SALESMAN'
+	  AND HIREDATE LIKE '1981%'
