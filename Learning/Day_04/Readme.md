@@ -1,5 +1,3 @@
-## `README.md`
-
 # Day 04 - DISTINCT, TOP, ORDER BY and Transactions
 
 ## Topics practiced
